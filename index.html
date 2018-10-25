@@ -1,14 +1,584 @@
-<html> 
-  <head> 
-    <script src="jquery.js"></script> 
-    <script> 
-    $(function(){
-      $("#includedContent").load("./myportfolio/html/surajportfolio.html"); 
-    });
-    </script> 
-  </head> 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
 
-  <body> 
-     <div id="includedContent"></div>
-  </body> 
+	<title>Suraj Sheela Portfolio</title>
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<!-- Bootstrap core CSS -->
+	<link href="../css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Material Design Bootstrap -->
+	<link href="../css/mdb.min.css" rel="stylesheet">
+
+	<!-- Your custom styles (optional) -->
+	<link href="../css/style.css" rel="stylesheet">
+
+    <style>
+        html,
+        body,
+        header,
+        .jarallax {
+          height: 100%;
+        }
+
+        @media (min-width: 560px) and (max-width: 740px) {
+          html,
+          body,
+          header,
+          .jarallax {
+            height: 600px;
+          }
+        }
+    </style>
+
+</head>
+<body class="developer">
+
+    <!--Navigation & Intro-->
+    <header>
+
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
+            <div class="container">
+                <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav mr-auto smooth-scroll">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about" data-offset="100">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#skills" data-offset="100">Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#works" data-offset="100">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#education" data-offset="100">Education</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact" data-offset="100">Contact</a>
+                        </li>
+                    </ul>
+                    <!-- Social Icon  -->
+                    <ul class="navbar-nav nav-flex-icons">
+                        <li class="nav-item">
+                            <a href="https://github.com/surajsheela" target="_blank class="nav-link"><i class="fa fa-github pr-1 light-green-text-2"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Intro Section -->
+        <div id="home" class="view jarallax" data-jarallax='{"speed": 0.2}' style="background-image: url('http://www.intertech.ps/images1/home_sec.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center center;">
+            <div class="mask rgba-white-strong">
+                <div class="container h-100 d-flex justify-content-center align-items-center">
+                    <div class="row smooth-scroll">
+                        <div class="col-md-12 pt-3">
+                            <div class="white-text text-center pt-5" style="display:flex;">
+                                <div>
+                                 <img src="../images/myphoto.png" style="border-radius: 18px;border:5px solid gray;">
+                                </div>
+                                <div style="margin-left: 5%;'">
+                                <h1 class="display-2 mb-4 dark-grey-text wow fadeIn">I am <strong>Suraj Sheela</strong></h1>
+                                <h5 class="text-uppercase font-weight-bold wow fadeIn" data-wow-delay="0.4s"><mark>Frontend Developer & Mentor</mark></h5>
+                                <a href="#about" class="btn btn-floating btn-large wow fadeIn" data-wow-delay="0.4s" data-offset="100"><i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </header>
+    <!--/Navigation & Intro-->
+
+    <!--Main layout-->
+    <main>
+
+        <!-- First container -->
+        <div class="container">
+
+            <!-- Section About -->
+            <section id="about" class="section feature-box mb-5">
+
+                <!-- Section title -->
+                <h2 class="text-center text-uppercase my-5 pt-5 wow fadeIn" data-wow-delay="0.2s">About <strong>me</strong></h2>
+
+                <p class="text-center w-responsive mx-auto wow fadeIn my-5" data-wow-delay="0.2s"> Iam a Front-end Developer, graduate of Computer Science, and teaching assistant of Web technologies. I have 5 years professional experience providing front-end development, producing high quality responsive websites and exceptional user experience.</p>
+                <!-- <p class=" w-responsive mx-auto wow fadeIn my-5" data-wow-delay="0.2s">Clients often approach me when they need a developer who can provide:
+                <ul class=" w-responsive mx-auto wow fadeIn my-5">
+                <li>Responsive HTML5/CSS3</li>
+                <li>Bootstrap</li>
+                <li>Ajax</li>
+                <li>ECMAScript6/5</li>
+                <li>JSON</li>
+                <li>JavaScript (Angular 4/5, jQuery, and React/Redux frameworks)</li>
+                <li>Angular Material Design</li>
+                <li>Observables and Promises</li>
+                <li>Responsive Web Designs</li>
+                <li>Agile Methodolog</li>
+                <li>Performance</li>
+                <li>Animation</li>
+                <li>Git</li>
+                <li>WordPress</li>
+                <li>MySQL</li>
+                <li>Java</li>
+                <li>Struts 2.0</li>
+                <li>JIRA, Maven and Gradle</li>
+                </ul></p> -->
+                <!-- First row -->
+                <div class="row features-big text-center wow fadeIn" data-wow-delay="0.4s">
+
+                    <!-- First column -->
+                    <div class="col-md-4 mb-5">
+
+                        <!--Panel-->
+                        <div class="card card-body hoverable">
+                            <i class="fa fa-laptop dark-grey- fa-3x mb-4" aria-hidden="true"></i>
+                            <h5 class="font-weight-bold text-uppercase mb-4">Mentor</h5>
+                            <p class="dark-grey-text">To teach undergraduate students C++ programming and web technologies.</p>
+                        </div>
+                        <!--/.Panel-->
+
+                    </div>
+                    <!-- /First column -->
+
+                    <!-- Second column -->
+                    <div class="col-md-4 mb-5">
+
+                        <!--Panel-->
+                        <div class="card card-body yellow hoverable">
+                            <i class="fa fa-code dark-grey-text fa-3x mb-4" aria-hidden="true"></i>
+                            <h5 class="font-weight-bold text-uppercase mb-4">Developer</h5>
+                            <p class="dark-grey-text">To develop dynamic and responsive web designs.</p>
+                        </div>
+                        <!--/.Panel-->
+
+                    </div>
+                    <!-- /.Second column -->
+
+                    <!-- Third column -->
+                    <div class="col-md-4 mb-5">
+
+                        <!--Panel-->
+                        <div class="card card-body hoverable">
+                            <i class="fa fa-pencil dark-grey-text fa-3x mb-4" aria-hidden="true"></i>
+                            <h5 class="font-weight-bold text-uppercase mb-4">Designer</h5>
+                            <p class="dark-grey-text">To design mockups and prototypes as per business requirement.</p>
+                        </div>
+                        <!--/.Panel-->
+
+                    </div>
+                    <!-- /.Third column -->
+
+                </div>
+                <!-- /.First row -->
+
+            </section>
+            <!-- /.Second section -->
+
+        </div>
+        <!-- /.First container -->
+
+        <!--Second container-->
+        <div class="container-fluid" style="background-color: #f3f3f5;">
+            <div class="container py-4 pt-4">
+
+                <!-- Second section -->
+                <section id="skills">
+
+                    <!-- First row -->
+                    <div class="row py-5">
+
+                        <!--First column-->
+                        <div class="col-lg-6 col-md-12 mb-3 wow fadeIn" data-wow-delay="0.4s">
+
+                        <!--Section heading-->
+                        <div class="d-flex justify-content-start">
+                            <h4 class="text-center text-uppercase mb-5 pb-3 mt-4 wow fadeIn" data-wow-delay="0.2s">My <strong>experience</strong></h4>
+                        </div>
+
+                                <!--Description-->
+                                <blockquote class="blockquote bq-warning mb-4">
+                                    <div class="row"> <i class="fa fa-briefcase fa-x mb-1 mr-3 ml-3 dark-grey-text" aria-hidden="true"></i>
+                                        <h5 class="font-weight-bold mb-3">Frontend Developer</h5>
+                                    </div>
+                                    <p class="font-weight-bold ml-1 dark-grey-text mb-2">March, 2018 - Present (6 months)</p>
+                                    <p class="mb-0 ml-1 light-grey-text">To develop responsive web designs for eSign application (Docu Sign). </p>
+                                </blockquote>
+
+                                <blockquote class="blockquote bq-warning mt-1 mb-4">
+                                    <div class="row"> <i class="fa fa-briefcase fa-x mb-1 mr-3 ml-3 dark-grey-text" aria-hidden="true"></i>
+                                        <h5 class="font-weight-bold mb-3">Teaching Assistant</h5> </div>
+                                    <p class="font-weight-bold ml-1 dark-grey-text mb-2">January 2017 - December 2017 (1 year, 0 Months)</p>
+                                    <p class="mb-0 ml-1 light-grey-text">To teach C++ programming and web technologies for University of Southern Mississippi undergrduate students. </p>
+                                </blockquote>
+                                <blockquote class="blockquote bq-warning mt-1 mb-4">
+                                    <div class="row"> <i class="fa fa-briefcase fa-x mb-1 mr-3 ml-3 dark-grey-text" aria-hidden="true"></i>
+                                        <h5 class="font-weight-bold mb-3">Drupal Developer</h5> </div>
+                                    <p class="font-weight-bold ml-1 dark-grey-text mb-2">August 2016 - December 2016 (6 Months)</p>
+                                    <p class="mb-0 ml-1 light-grey-text">To develop university website for “Office of Research and Integrity”. </p>
+                                </blockquote>
+                                <blockquote class="blockquote bq-warning">
+                                    <div class="row"> <i class="fa fa-briefcase fa-x mb-1 mr-3 ml-3 dark-grey-text" aria-hidden="true"></i>
+                                        <h5 class="font-weight-bold mb-3">JavaScript developer</h5> </div>
+                                    <p class="font-weight-bold ml-1 dark-grey-text mb-2"><strong>August 2013 - July 2016 (3 years, 0 Month)</strong></p>
+                                    <p class="mb-0 ml-1 light-grey-text">To Develop the wealth management product for Vanguard Group to customize and build advisory concepts.</p>
+                                </blockquote>
+
+                        </div>
+                        <!--/First column-->
+
+                        <!--Second column-->
+                        <div class="col-lg-5 offset-lg-1 col-md-12 mb-4 wow fadeIn" data-wow-delay="0.4s">
+
+                        <!--Second heading-->
+                        <div class="d-flex justify-content-start">
+                            <h4 class="text-center text-uppercase mb-5 pb-3 mt-4 wow fadeIn" data-wow-delay="0.2s">Development <strong>Skills</strong></h4>
+                        </div>
+
+                            <!--Description-->
+                            <p class="black-text text-uppercase font-weight-bold" align="justify">Java Script</p>
+                                <div class="md-progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+
+                            <p class="black-text text-uppercase font-weight-bold pt-3" align="justify">CSS3</p>
+                                <div class="md-progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 65%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+
+                            <p class="black-text text-uppercase font-weight-bold pt-3" align="justify">HTML5</p>
+                                <div class="md-progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+
+                            <p class="black-text text-uppercase font-weight-bold pt-3" align="justify">Bootstrap</p>
+                                <div class="md-progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 45%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+
+                            <p class="black-text text-uppercase font-weight-bold pt-3" align="justify">Angular 4/5</p>
+                                <div class="md-progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 53%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                             <p class="black-text text-uppercase font-weight-bold pt-3" align="justify">Ajax</p>
+                                <div class="md-progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 53%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            <p class="black-text text-uppercase font-weight-bold pt-3" align="justify">JSON</p>
+                                <div class="md-progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 53%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            <p class="black-text text-uppercase font-weight-bold pt-3" align="justify">Core Java</p>
+                                <div class="md-progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 53%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>   
+                            <p class="black-text text-uppercase font-weight-bold pt-3" align="justify">OOPS</p>
+                                <div class="md-progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 53%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>   
+                            <p class="black-text text-uppercase font-weight-bold pt-3" align="justify">Observables and Promises</p>
+                                <div class="md-progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 53%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>   
+                            <p class="black-text text-uppercase font-weight-bold pt-3" align="justify">Responsive web designs</p>
+                                <div class="md-progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 53%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>   
+                            <p class="black-text text-uppercase font-weight-bold pt-3" align="justify">Angular Material design</p>
+                                <div class="md-progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 53%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div> 
+                            <p class="black-text text-uppercase font-weight-bold pt-3" align="justify">PHP</p>
+                                <div class="md-progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 53%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>   
+                        </div>
+                        <!--/Second column-->
+
+                    </div>
+                    <!--/First row-->
+
+                </section>
+                <!-- /.Second section -->
+
+          </div>
+        </div>
+        <!--/Second container-->
+
+        <!-- Third container -->
+        <div class="container">
+
+            <!-- Section About -->
+            <section class="section feature-box my-5 pb-5">
+
+                <!-- Section title -->
+                <h2 class="text-center text-uppercase my-5 pt-5 wow fadeIn" data-wow-delay="0.2s">Process of <strong>creating</strong></h2>
+                <p class="text-center w-responsive mx-auto wow fadeIn my-5" data-wow-delay="0.2s"> The core part of website development and design is not necessary the coding process. Indeed, such technologies as HTML, CSS, and JavaScript give the web we know its shape and define the way we interact with the information. But what usually stay behind the scenes and, at the same time, remain the crucial part of website development life cycle are the stages of preliminary information gathering, detailed planning, and post-launch maintenance.</p>
+
+                    <!-- Nav tabs -->
+                    <ul class="nav md-tabs nav-justified blue" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-toggle="tab" href="#panel1" role="tab">01. Research</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#panel2" role="tab">02. Design</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#panel3" role="tab">03. Development</a>
+                        </li>
+                    </ul>
+                    <!-- Tab panels -->
+                    <div class="tab-content card">
+                        <!--Panel 1-->
+                        <div class="tab-pane fade in show active" id="panel1" role="tabpanel">
+                            <br>
+                            <div class="row mt-2">
+                                <div class="col-2 text-center"> <i class="fa fa-search fa-3x mb-1 grey-text" aria-hidden="true"></i> </div>
+                                <div class="col-9 mb-2">
+                                    <p class="dark-grey-text">At this stage of website development, the developer creates the data that can give to a customer an opportunity to judge how the entire site will look like. Evidence is documented that a potential product or service can be successful.Developing this prototype can help a product owner to identify potential technical and logistical issues that might interfere with success.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/.Panel 1-->
+
+                        <!--Panel 2-->
+                        <div class="tab-pane fade" id="panel2" role="tabpanel">
+                            <br>
+                            <div class="row mt-2">
+                                <div class="col-2 text-center"> <i class="fa fa-pencil fa-3x mb-1 grey-text" aria-hidden="true"></i> </div>
+                                <div class="col-9 mb-2">
+                                    <p class="dark-grey-text">A wireframe is designed for visual representation of user interface that you’re going to create.It only describes the elements that will be added to the page and their location. The primary function of the layout is to represent the information structure, visualize the content, and demonstrate the basic functional. Layouts contain colors, logos, images and can give a general understanding of the future product.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/.Panel 2-->
+
+                        <!--Panel 3-->
+                        <div class="tab-pane fade" id="panel3" role="tabpanel">
+                            <br>
+                            <div class="row mt-2">
+                                <div class="col-2 text-center"> <i class="fa fa-code fa-3x mb-1 grey-text" aria-hidden="true"></i> </div>
+                                <div class="col-9 mb-2">
+                                    <p class="dark-grey-text">Graphic elements that have been designed during the previous stages are used to create an actual website with various frameworks/libararies.Home page is created first, and then all sub-pages are added, according to the website hierarchy that was previously created from mockups.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/.Panel 3-->
+                    </div>
+                <!-- /.Tab panels -->
+            </section>
+            <!-- /.Section -->
+
+        </div>
+        <!-- /.Third container -->
+
+        <!-- Streak -->
+        <div class="streak streak-photo streak-md" style="background-image:url('https://wakeup-world.com/wp-content/uploads/2015/06/Relationships-Co-Creation-Unification-and-Ripples-In-The-Pond-.png')">
+            <div class="mask flex-center rgba-indigo-strong">
+                <div class="white-text smooth-scroll mx-4">
+                    <h2 class="h2-responsive wow fadeIn mb-5"><i class="fa fa-quote-left" aria-hidden="true"></i> You want to be the pebble in the pond that creates the ripple for change. <i class="fa fa-quote-right" aria-hidden="true"></i></h2>
+                    <h5 class="text-center font-italic wow fadeIn" data-wow-delay="0.2s">~ Tim Cook</h5>
+                </div>
+            </div>
+        </div>
+        <!-- /.Streak -->
+
+        <!-- Fourth container -->
+        <div class="container">
+
+            <!-- Fourth section -->
+            <section id="works" class="section mb-5">
+
+                <!-- Section title -->
+                <h2 class="text-center text-uppercase my-5 pt-5 wow fadeIn" data-wow-delay="0.2s">My <strong>projects</strong></h2>
+
+                <!-- Section description -->
+                <p class="text-center w-responsive mx-auto wow fadeIn my-5"></p>
+
+                <!-- First row -->
+                <div class="row wow fadeIn" data-wow-delay="0.4s">
+
+                    <!-- First column -->
+                    <div class="col-md-12 mb-5">
+
+                        <!-- Lightbox -->
+                        <div id="mdb-lightbox-ui"></div>
+
+                        <div class="mdb-lightbox">
+
+                            <figure class="col-md-4">
+                                <a href="https://mdbootstrap.com/img/Mockups/Lightbox/Thumbnail/img%20(63).jpg" data-size="1600x1067">
+                                    <img src="https://mdbootstrap.com/img/Mockups/Lightbox/Thumbnail/img%20(63).jpg" class="img-fluid z-depth-1">
+                                </a>
+                            </figure>
+
+                            <figure class="col-md-4">
+                                <a href="https://mdbootstrap.com/img/Mockups/Lightbox/Original/img%20(66).jpg" data-size="1600x1067">
+                                    <img src="https://mdbootstrap.com/img/Mockups/Lightbox/Thumbnail/img%20(66).jpg" class="img-fluid z-depth-1">
+                                </a>
+                            </figure>
+
+                            <figure class="col-md-4">
+                                <a href="https://mdbootstrap.com/img/Mockups/Lightbox/Original/img%20(65).jpg" data-size="1600x1067">
+                                    <img src="https://mdbootstrap.com/img/Mockups/Lightbox/Thumbnail/img%20(65).jpg" class="img-fluid z-depth-1">
+                                </a>
+                            </figure>
+
+                        </div>
+                        <!-- /.Lightbox -->
+
+                    </div>
+                    <!-- /.First column -->
+
+                </div>
+                <!-- /.First row -->
+
+            </section>
+            <!-- /.Fourth section -->
+                <section id="education">
+
+                    <!-- First row -->
+                    <div class="row py-5">
+
+                        <!--First column-->
+                        <div class="col-lg-6 col-md-12 mb-3 wow fadeIn" data-wow-delay="0.4s">
+
+                        <!--Section heading-->
+                        <div class="d-flex justify-content-start">
+                            <h4 class="text-center text-uppercase mb-5 pb-3 mt-4 wow fadeIn" data-wow-delay="0.2s"><strong>Education</strong></h4>
+                        </div>
+
+                                <!--Description-->
+                                <blockquote class="blockquote bq-warning mb-4">
+                                    <div class="row"> <i class="fa fa-briefcase fa-x mb-1 mr-3 ml-3 dark-grey-text" aria-hidden="true"></i>
+                                        <h5 class="font-weight-bold mb-3">The University of Southern Mississippi</h5>
+                                    </div>
+                                    <p class="font-weight-bold ml-1 dark-grey-text mb-2">December 2017</p>
+                                    <p class="mb-0 ml-1 light-grey-text">Master's in Computer Science </p>
+                                </blockquote>
+
+                                <blockquote class="blockquote bq-warning mt-1 mb-4">
+                                    <div class="row"> <i class="fa fa-briefcase fa-x mb-1 mr-3 ml-3 dark-grey-text" aria-hidden="true"></i>
+                                        <h5 class="font-weight-bold mb-3">Sastra University</h5> </div>
+                                    <p class="font-weight-bold ml-1 dark-grey-text mb-2">May 2013</p>
+                                    <p class="mb-0 ml-1 light-grey-text">Bachelor's in Bioinformatics </p>
+                                </blockquote>
+
+                        </div>
+
+                    </div>
+                    <!--/First row-->
+
+                </section>
+
+            <hr>
+
+        </div>
+        <!-- /.Fourth container -->
+
+        <!-- Contact form -->
+        <div id="contact" class="container">
+
+            <!--Section: Contact v.2-->
+            <section class="section contact-section mt-4 mb-5">
+                <!--Section heading-->
+                <h2 class="text-center text-uppercase my-5 pt-5 wow fadeIn" data-wow-delay="0.2s">Contact <strong>me</strong></h2>
+                
+                <div class="row wow fadeIn" data-wow-delay="0.4s">
+
+                    
+                    <!--.First column-->
+
+                    <!--Second column-->
+                    <div class="col-md-4" style="display: flex;justify-content: center;align-items: center;margin-left: 35%;">
+                        <ul class="contact-icons list-unstyled text-center">
+                            <li><i class="fa fa-map-marker fa-2x"></i>
+                                <p>589 Manet ter, Sunnyvale, CA 94087, USA</p>
+                            </li>
+                            <li><i class="fa fa-phone fa-2x"></i>
+                                <p>(682) 252-8649</p>
+                            </li>
+                            <li><i class="fa fa-envelope fa-2x"></i>
+                                <p>suraj.sheela@eagles.usm.edu</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--.Second column-->
+                </div>
+
+            </section>
+            <!--/Section: Contact v.2-->
+
+        </div>
+        <!-- Contact form -->
+
+        
+
+        <!-- /.Customers carousel -->
+
+    </main>
+    <!--/Main layout-->
+
+    <!-- Scrollspy -->
+    <div class="dotted-scrollspy clearfix d-none d-sm-block">
+        <ul class="nav smooth-scroll flex-column">
+            <li class="nav-item"><a class="nav-link" href="#home"><span></span></a></li>
+            <li class="nav-item"><a class="nav-link" href="#about"><span></span></a></li>
+            <li class="nav-item"><a class="nav-link" href="#skills"><span></span></a></li>
+            <li class="nav-item"><a class="nav-link" href="#works"><span></span></a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact"><span></span></a></li>
+        </ul>
+    </div>
+
+    <!-- SCRIPTS -->
+
+    <!-- JQuery -->
+    <script type="text/javascript" src="../js/jquery-3.3.1.min.js"></script>
+
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="../js/popper.min.js"></script>
+
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="../js/mdb.min.js"></script>
+
+    <script>
+        // initialize scrollspy
+        $('body').scrollspy({
+            target: '.dotted-scrollspy'
+        });
+
+        // initialize lightbox
+        $(function () {
+            $("#mdb-lightbox-ui").load("../mdb-addons/mdb-lightbox-ui.html");
+        });
+
+        $('.navbar-collapse a').click(function(){
+            $(".navbar-collapse").collapse('hide');
+        });
+
+        /* WOW.js init */
+        new WOW().init();
+
+    </script>
+
+</body>
 </html>

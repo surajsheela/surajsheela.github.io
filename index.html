@@ -1,1 +1,14 @@
-<div w3-include-html="./myportfolio/html/surajportfolio.html"></div>
+<html> 
+  <head> 
+    <script src="jquery.js"></script> 
+    <script> 
+    $(function(){
+      $("#includedContent").load("./myportfolio/html/surajportfolio.html"); 
+    });
+    </script> 
+  </head> 
+
+  <body> 
+     <div id="includedContent"></div>
+  </body> 
+</html>
